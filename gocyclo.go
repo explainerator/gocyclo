@@ -68,7 +68,7 @@ func main() {
 		usage()
 	}
 
-	stats := analyze(args)
+	stats := Analyze(args)
 	sort.Sort(byComplexity(stats))
 	written := writeStats(os.Stdout, stats)
 
@@ -81,7 +81,7 @@ func main() {
 	}
 }
 
-func analyze(paths []string) []stat {
+func Analyze(paths []string) []stat {
 	var stats []stat
 	for _, path := range paths {
 		if isDir(path) {
