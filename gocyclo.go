@@ -16,7 +16,7 @@
 //
 // The output fields for each line are:
 // <complexity> <package> <function> <file:row:column>
-package main
+package gocyclo
 
 import (
 	"flag"
